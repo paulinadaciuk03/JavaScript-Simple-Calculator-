@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(41, 41, 41);
+}
+
+.header-style{
+    display: flex;
+    background-color: #E76F51;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.header-title{
+    color: white;
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+.header-left{
+    display: flex;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: black;
+    font-weight: light;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 50px auto;
+
+}
+
+.input-style{
+    width: 400px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(58, 58, 58);
+    border-radius: 40px;
+    color: white;
+    font-size: 40px;
+}
+
+.js-input {
+    margin: 0 20px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.btn{
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    background-color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+
+.btn-accent{
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    background-color: #E76F51;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-0{
+    grid-column: span 3;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 30px;
+    border: none;
+    background-color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+
+.btn:hover, .btn-0:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+.btn-accent:hover{
+    background-color: #ffb29f;
+}
+
+.highlight-btn{
+    background-color: #ffb29f;
+}
+
+.error{
+    display: none;
+    color: red;
+    font-size: 20px;
+    margin: 15px 20px;
+}

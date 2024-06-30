@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-style">
+        <div class="header-left">
+            <img src="images/logo.svg" alt="" class="logo">
+            <h1 class="header-title">Javascript Calculator</h1>
+        </div>
+        <div class="header-right">
+            <p>Paulina Daciuk 2024</p>
+        </div>
+    </header>
+    <section class="container">
+        <div class="calculator">
+            <div class="input-style">
+                <p class="js-input">0</p>
+                <p class="error">Error. Division by zero.</p>
+            </div>
+            <div class="buttons">
+                <button class="btn js-button js-clear" onclick="clear(), acBtn()">AC</button>
+                <button class="btn" onclick="negativeBtn()">+/-</button>
+                <button class="btn" onclick="percentageBtn()">%</button>
+                <button class="btn-accent js-op-button js-divide-button" onclick="divideBtn(this)">/</button>
+                <button class="btn js-button">7</button>
+                <button class="btn js-button">8</button>
+                <button class="btn js-button">9</button>
+                <button class="btn-accent js-op-button js-multiply-button" onclick="multiplyBtn(this)">x</button>
+                <button class="btn js-button">4</button>
+                <button class="btn js-button">5</button>
+                <button class="btn js-button">6</button>
+                <button class="btn-accent js-op-button js-sub-button" onclick="subBtn(this)">-</button>
+                <button class="btn js-button">1</button>
+                <button class="btn js-button">2</button>
+                <button class="btn js-button">3</button>
+                <button class="btn-accent js-op-button js-add-button" onclick="addBtn(this)">+</button>
+                <button class="btn-0 js-button">0</button>
+                <button class="btn-accent" onclick="equals()">=</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
